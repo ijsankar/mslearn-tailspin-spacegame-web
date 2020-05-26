@@ -6,7 +6,7 @@ steps:
   displayName: 'Buil the project - ${{ parameters.buildConfiguration }}'
   inputs: '**/*.csproj'
 
-  - task: DotNetCoreCLI@2
+- task: DotNetCoreCLI@2
   displayName: 'Publish the project - ${{ parameters.buildConfiguration }}'
   inputs:
     command: 'publish'
